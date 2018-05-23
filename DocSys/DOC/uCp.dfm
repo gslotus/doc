@@ -1,0 +1,79 @@
+object fmcp: Tfmcp
+  Left = 276
+  Top = 176
+  Width = 500
+  Height = 260
+  Caption = #35079#35069#27402#38480
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 106
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 32
+    Top = 56
+    Width = 54
+    Height = 18
+    Caption = #35079#35069#32102
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = #26032#32048#26126#39636
+    Font.Style = []
+    ParentFont = False
+  end
+  object cb_source: TComboBox
+    Left = 32
+    Top = 24
+    Width = 369
+    Height = 26
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = #26032#32048#26126#39636
+    Font.Style = []
+    ItemHeight = 18
+    ParentFont = False
+    TabOrder = 0
+  end
+  object cb_dest: TComboBox
+    Left = 32
+    Top = 80
+    Width = 369
+    Height = 26
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = #26032#32048#26126#39636
+    Font.Style = []
+    ItemHeight = 18
+    ParentFont = False
+    TabOrder = 1
+  end
+  object btn_ok: TButton
+    Left = 248
+    Top = 136
+    Width = 201
+    Height = 41
+    Caption = #30906#23450#35079#35069
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -18
+    Font.Name = #26032#32048#26126#39636
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btn_okClick
+  end
+  object ADOQuery1: TADOQuery
+    Connection = dm.glm
+    Parameters = <>
+    Left = 144
+    Top = 152
+  end
+end

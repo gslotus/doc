@@ -1,0 +1,121 @@
+object fmMail: TfmMail
+  Left = 223
+  Top = 175
+  Width = 649
+  Height = 355
+  Caption = #37109#20214
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label4: TLabel
+    Left = 16
+    Top = 16
+    Width = 32
+    Height = 15
+    Caption = #20027#26088
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = #32048#26126#39636
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 16
+    Top = 48
+    Width = 32
+    Height = 15
+    Caption = #20839#23481
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = #32048#26126#39636
+    Font.Style = []
+    ParentFont = False
+  end
+  object Edit4: TEdit
+    Left = 96
+    Top = 16
+    Width = 521
+    Height = 24
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = #32048#26126#39636
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 456
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = #36865#20986#37109#20214
+    TabOrder = 1
+    OnClick = BitBtn1Click
+  end
+  object BitBtn2: TBitBtn
+    Left = 532
+    Top = 240
+    Width = 75
+    Height = 25
+    Caption = #38626#38283
+    TabOrder = 2
+    OnClick = BitBtn2Click
+  end
+  object RichEdit1: TRichEdit
+    Left = 0
+    Top = 297
+    Width = 641
+    Height = 24
+    Align = alBottom
+    Color = clMenu
+    Font.Charset = CHINESEBIG5_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = #32048#26126#39636
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object RichEdit2: TRichEdit
+    Left = 96
+    Top = 48
+    Width = 521
+    Height = 137
+    Font.Charset = CHINESEBIG5_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = #32048#26126#39636
+    Font.Style = []
+    Lines.Strings = (
+      '')
+    ParentFont = False
+    PlainText = True
+    ScrollBars = ssBoth
+    TabOrder = 4
+  end
+  object Smtp: TNMSMTP
+    Host = 'mail.gs.com.tw'
+    Port = 25
+    TimeOut = 5000
+    ReportLevel = 0
+    UserID = 'cyj'
+    EncodeType = uuCode
+    ClearParams = True
+    SubType = mtPlain
+    Charset = 'big5'
+    OnFailure = SmtpFailure
+    Left = 176
+    Top = 136
+  end
+end
